@@ -281,6 +281,48 @@
             background-position: 30% 6%
         }
 
+        .visit {
+            background: var(--night);
+            border-top: 1px solid #1f2733;
+            border-bottom: 1px solid #1f2733
+        }
+
+        .visit .wrap {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 32px;
+            align-items: center
+        }
+
+        .visit h2 {
+            font-size: clamp(30px, 4vw, 44px)
+        }
+
+        .visit p {
+            margin: 12px 0 0;
+            color: #d9ccb6;
+            max-width: 46ch
+        }
+
+        .visit .acts {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap
+        }
+
+        .visit .btn svg {
+            width: 18px;
+            height: 18px;
+            vertical-align: -3px;
+            margin-right: 8px
+        }
+
+        @media(max-width:860px) {
+            .visit .wrap {
+                grid-template-columns: 1fr
+            }
+        }
+
         .light {
             background: var(--cream);
             color: var(--ink)
@@ -467,8 +509,9 @@
     <header class="top">
         <div class="wrap"><a class="logo script" href="#topo">Juci Cakes</a>
             <nav aria-label="Principal"><a href="#espaco">Nosso espaço</a><a href="#portfolio">Portfólio</a><a
-                    href="#encomendas">Encomendas</a><a class="btn"
-                    href="https://api.whatsapp.com/send/?phone=555496351759&text=Ol%C3%A1%21+Vim+pelo+Instagram+e+gostaria+de+fazer+um+pedido.">WhatsApp</a></nav>
+                    href="#como-chegar">Como chegar</a><a href="#encomendas">Encomendas</a><a class="btn"
+                    href="https://api.whatsapp.com/send/?phone=555496351759&amp;text=Ol%C3%A1%21+Vim+pelo+Instagram+e+gostaria+de+fazer+um+pedido.">WhatsApp</a>
+            </nav>
         </div>
     </header>
     <main id="topo">
@@ -512,6 +555,25 @@
             </div>
         </section>
 
+        <section class="visit" id="como-chegar">
+            <div class="wrap">
+                <div>
+                    <h2>Venha nos visitar</h2>
+                    <p>Estamos em Boa Vista do Sul/RS. Toque em &ldquo;Como chegar&rdquo; e o Google Maps abre com a
+                        rota a partir de onde você está.</p>
+                </div>
+                <div class="acts"><a class="btn"
+                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Juci+Cakes+Boa+Vista+do+Sul+RS&amp;travelmode=driving"
+                        target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" />
+                            <circle cx="12" cy="9.5" r="2.5" />
+                        </svg>Como chegar</a><a class="btn ghost"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Juci+Cakes+Boa+Vista+do+Sul+RS"
+                        target="_blank" rel="noopener">Ver no mapa</a></div>
+            </div>
+        </section>
+
         <section class="light" id="portfolio">
             <div class="wrap">
                 <div class="head">
@@ -537,8 +599,8 @@
                         <div class="ic"><svg>
                                 <use href="#cup" />
                             </svg></div>
-                        <h3>Doces</h3>
-                        <p>Docinhos para a mesa de festa ou para presentear.</p>
+                        <h3>Doces e cookies</h3>
+                        <p>Docinhos e cookies para a mesa de festa ou para presentear.</p>
                     </article>
                     <article class="card">
                         <div class="ic"><svg>
@@ -570,16 +632,16 @@
             <div class="wrap">
                 <h2>Vai ter festa? Faça sua encomenda.</h2>
                 <p>Conte a data, o número de pessoas e o sabor que você quer. Respondemos pelo WhatsApp.</p>
-                <a class="btn" href="https://api.whatsapp.com/send/?phone=555496351759&text=Ol%C3%A1%21+Vim+pelo+Instagram+e+gostaria+de+fazer+um+pedido.">Chamar no WhatsApp</a>
+                <a class="btn"
+                    href="https://api.whatsapp.com/send/?phone=555496351759&amp;text=Ol%C3%A1%21+Vim+pelo+Instagram+e+gostaria+de+fazer+um+pedido.">Chamar
+                    no WhatsApp</a>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrap"><span class="script">Juci Cakes</span>Padaria e Confeitaria · Boa Vista do Sul/RS<br><a
-                href="https://linktr.ee/confeitariajucicakes">linktr.ee/confeitariajucicakes</a>
-        </div>
-
-        <span>Desenvolvedor · Gustavo E. Rahmeier</span>
+                href="https://linktr.ee/confeitariajucicakes">linktr.ee/confeitariajucicakes</a></div>
+        <div style="margin-top:14px;font-size:13px;opacity:.7">Desenvolvedor Gustavo E. Rahmeier</div>
     </footer>
 </body>
 
